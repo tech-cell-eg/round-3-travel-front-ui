@@ -21,6 +21,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-head:rgba(235, 102, 43, 1)
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -80,16 +81,14 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 21.25rem;
 }
 .navbar{
-
     width: 100%;
   
     top: 1rem;
 }
 .btn-outline-success{
     border-radius: 12px;
-    background: rgba(235, 102, 43, 1);
+    background: var(--bs-head);
     overflow-x: hidden;
-   
 }
 
 .log{
@@ -99,19 +98,20 @@ h1, h2, h3, h4, h5, h6 {
     left: 97rem;
     border-radius: 12px;
     margin-right: 1.25rem;
-     color: white;
-   
+    color: white;
+    background-color: rgba(235, 102, 43, 1);
 }
 .search{
-    width: 8.6rem;
-    height: 3.7rem;
-    top: 0.625rem;
-    left: 107.25rem;
-    color: white;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+     width: 8.6rem;
+     height: 3.7rem;
+     top: 0.625rem;
+     left: 107.25rem;
+     color: white;
+     background-color: rgba(235, 102, 43, 1);
+     -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+     -ms-border-radius: 12px;
+     -o-border-radius: 12px;
      border-radius: 12px;
 }
    .section {
@@ -127,16 +127,16 @@ h1, h2, h3, h4, h5, h6 {
         }
 
         .section div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            text-align: center;
-            color: white;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             text-align: center;
+             color: white;
              transform: translate(-50%, -50%);
+             -webkit-transform: translate(-50%, -50%);
+             -moz-transform: translate(-50%, -50%);
+             -ms-transform: translate(-50%, -50%);
+             -o-transform: translate(-50%, -50%);
 }
 
         .text1 {
@@ -222,41 +222,216 @@ h2{
     align-items: center;
 
 }
+/* featured*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container1{
- width: 142px;
-height: 20px;
-top: 4px;
-left: 15px;
-font-family: Inter;
-font-weight: 400;
-font-size: 14.3px;
-line-height: 28.13px;
-letter-spacing: 0%;
-vertical-align: middle;
+.Featured{
+     margin: 0 20px;
+     border: 1px solid #ebe9e9;
+     border-radius: 15px;
+}
+.last{
+  
+     border-top: 1px solid #ebe9e9;
+     padding-top: 15px;
+    
+   
+}
+/* Travel*/
+.container_travel{
+    position: relative;
+    height: 500px;
+}
+.title_travel{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 440px;
+    color: white;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.title_travel p{
+    color: #fff;
+}
+.bt_travel{
+    color: rgba(235,102,43,1);
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    margin-top: 20px;
+    padding: 20px 30px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+}
+.card1_travel{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    width: 185px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    
+}
+.img_travel {
+width: 40px;
+height: 40px;
+top: 40p;
+left: 110px;
+padding: 0;
+margin-top: 30px;
+margin-bottom: 10px;
 
 }
+
+.card1_travel h4 , .card2_travel h4{
+
+font-family: Inter;
+font-weight: 700;
+font-size: 30px;
+font-family: Inter;
+color:rgba(235, 102, 43, 1);
+}
+.card1_travel p ,.card2_travel p{
+font-weight: 400;
+font-size: 10.0px;
+margin-bottom: 25px;
+color: #050542;
+
+}
+.card2_travel{
+     position: absolute;
+    top: 53%;
+    left: 50%;
+    width: 185px;
+    height: 160px;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+}
+    /*customer Review*/
+
+    .container_customer{
+        background-color: rgb(243, 240, 245);
+        border: 2px solid blue;
+        
+;
+    }
+    .container_customer h2{
+    padding-top: 100px;
+    } 
+    .container_customer p.fw-bold {
+        width: 850px;
+        font-size:19.5px;
+        padding-top: 100px;
+    }
+  /*
+    .customer_img img:nth-child(1){
+        margin-top: -10px;
+        margin: 10px;;
+        border: 2px solid red;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+    }    
+        */
+
+.customer_js{
+    border: 2px solid red;
+     border-radius: 50%;
+}
+    
+/*Travel articles*/
+.container_articles{
+   
+   
+    width: 100%;
+    height: 750px;
+    background:  rgba(245, 245, 245, 1);
+
+   padding-top: 5rem;
+}
+.container_articles .col{
+    position: relative;
+
+}
+.trips{
+     position: absolute;
+     top: 15%;
+     left: 10%;
+     
+     border-radius: 15px;
+     font-size: 13.5px;
+}
+.articles .col p{
+    font-size: 13.5px;
+    padding: 0 2rem;
+    
+
+}
+.articles .row{
+    padding-left: 5rem;
+ 
+    height: 530px;
+
+}
+.articles .col{
+    height: 400PX;
+  
+}
+.articles .col img{
+    width: 100%;
+   
+
+/*container_trusted*/
+.container_trusted{
+    background-color: #050542;
+    height: 440px;
+}
+.img_trusted{
+    background-color: red;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 .explore{
     width: 635.8599853515625;
 height: 60;
@@ -271,3 +446,25 @@ vertical-align: middle;
 
 }
 
+*/
+
+
+
+
+
+/*
+.explore{
+    width: 635.8599853515625;
+height: 60;
+top: 58.13px;
+left: 15px;
+font-family: Inter;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+*/
