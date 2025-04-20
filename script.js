@@ -66,10 +66,19 @@ images.forEach((image,index)=>{
           customer_text.style.color="black";
           images[index].classList.add("customer_js");
         }
-        
-      
-   
-     
       
     })
+});
+
+
+
+//الإنتقال بين الصفحات
+let currentPage = 1;
+const pages = ["index.html", "list.html", "details.html", "index.html"]; // ترتيب الصفحات
+const button = document.getElementById("navigateButton");
+
+button.addEventListener("click", function() {
+    currentPage = (currentPage % 4) + 1; // الانتقال إلى الرقم التالي
+    button.textContent = currentPage; // تحديث الرقم داخل الزر
+    window.location.href = pages[currentPage - 1]; // تحميل الصفحة المناسبة
 });
